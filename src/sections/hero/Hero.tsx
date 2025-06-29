@@ -1,10 +1,13 @@
 import styles from './Hero.module.css';
+import {useTranslation} from "react-i18next";
 
 export default function Hero() {
+    const { t } = useTranslation();
+
     return (
         <section id="hero" className={styles.hero}>
-            <h1>Salut, je suis Matthieu Dupas</h1>
-            <p>Développeur Backend, spécialisé en Java.</p>
+            <h1>{t('hero.greeting')}</h1>
+            <p>{t('hero.subtitle')}</p>
             <a href="#projects" className={styles.cta}>Voir mes projets</a>
         </section>
     );

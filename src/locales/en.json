@@ -1,0 +1,14 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "education": "Education",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm Matthieu",
+    "subtitle": "Backend Developer"
+  }
+}

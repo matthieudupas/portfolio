@@ -1,0 +1,14 @@
+{
+  "navbar": {
+    "home": "Accueil",
+    "about": "À propos",
+    "education": "Formation",
+    "experience": "Expériences Professionnelles",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Bonjour, je suis Matthieu Dupas",
+    "subtitle": "Développeur Backend"
+  }
+}

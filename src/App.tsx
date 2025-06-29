@@ -1,8 +1,10 @@
+import Hero from "./sections/hero/Hero.tsx";
+
 function App() {
 
   return (
     <>
-        <h1>Bienvenue sur mon portfolio !</h1>
+        <Hero/>
     </>
   )
 }

@@ -10,5 +10,8 @@
   "hero": {
     "greeting": "Hello, I'm Matthieu",
     "subtitle": "Backend Developer"
+  },
+  "contact": {
+    "title": "Contact Me"
   }
 }

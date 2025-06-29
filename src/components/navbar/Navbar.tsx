@@ -13,6 +13,7 @@ export default function Navbar() {
                 <li><a href="#about">{t('navbar.about')}</a></li>
                 <li><a href="#education">{t('navbar.education')}</a></li>
                 <li><a href="#experience">{t('navbar.experience')}</a></li>
+                <li><a href="#contact">{t('navbar.contact')}</a></li>
             </ul>
             <LanguageSwitcher />
         </nav>

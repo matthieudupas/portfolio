@@ -6,7 +6,7 @@ export default function Contact() {
     const {t} = useTranslation();
 
     return (
-        <section className={styles.contact}>
+        <section id='contact' className={styles.contact}>
             <h2>{t('contact.title')}</h2>
             <div className={styles.icons}>
                 <a

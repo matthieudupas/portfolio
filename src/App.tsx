@@ -16,11 +16,11 @@ function App() {
         <I18nextProvider i18n={i18n}>
             <Navbar/>
             <Layout>
-            <Hero/>
-            <About/>
-            <Education/>
-            <Experience/>
-            <Contact/>
+                <Hero/>
+                <About/>
+                <Experience/>
+                <Education/>
+                <Contact/>
             </Layout>
             <Footer/>
         </I18nextProvider>

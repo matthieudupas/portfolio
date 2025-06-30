@@ -123,3 +123,14 @@
     background-color: #f9fbff; /* léger fond bleuté */
     cursor: default;
 }
+
+.schoolLink {
+    color: #3b82f6;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.schoolLink:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}

@@ -7,6 +7,7 @@ import {I18nextProvider} from "react-i18next";
 import i18n from "./i18n.ts";
 import Footer from "./components/footer/Footer.tsx";
 import Contact from "./sections/contact/Contact.tsx";
+import Layout from "./components/layout/Layout.tsx";
 
 function App() {
 
@@ -14,11 +15,13 @@ function App() {
     <>
         <I18nextProvider i18n={i18n}>
             <Navbar/>
+            <Layout>
             <Hero/>
             <About/>
             <Education/>
             <Experience/>
             <Contact/>
+            </Layout>
             <Footer/>
         </I18nextProvider>
     </>

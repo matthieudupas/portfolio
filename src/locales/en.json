@@ -13,5 +13,13 @@
   },
   "contact": {
     "title": "Contact Me"
+  },
+  "about": {
+    "title": "About Me",
+    "content": "Passionate developer with 3 years of experience through a work-study program, mainly working with technologies like Java, C#, and React. I have a strong interest in software architecture and development best practices (Clean Code, hexagonal architecture), as well as DevOps tools such as Docker and Kubernetes. I enjoy collaborative environments where knowledge sharing is encouraged, and I actively contribute to improving code quality. Autonomous, detail-oriented, and always eager to learn, I'm driven by the desire to grow and work on technically challenging projects."
+  },
+  "formation": {
+    "showMore": "More details",
+    "showLess": "Less details"
   }
 }

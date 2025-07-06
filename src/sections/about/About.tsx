@@ -1,15 +1,13 @@
 import styles from "./About.module.css";
+import {useTranslation} from "react-i18next";
 
 export default function About() {
+    const {t} = useTranslation();
+
     return (
         <section id="about" className={styles.about}>
-            <h1>À Propos De Moi</h1>
-            <p>
-                Développeur avec une expertise en développement logiciel (Java, C#, React). Expérimenté en
-                DevOps (Docker, Kubernetes), orienté qualité logicielle et architecture moderne (Clean Code, architecture
-                hexagonale). Curieux, autonome et capable d’apprendre rapidement de nouvelles technologies, je m’intègre
-                facilement dans des équipes pluridisciplinaires et collaboratives.
-            </p>
+            <h1>{t('about.title')}</h1>
+            <p>{t('about.content')}</p>
         </section>
     )
 }

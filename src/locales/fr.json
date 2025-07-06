@@ -13,5 +13,13 @@
   },
   "contact": {
     "title": "Contactez Moi"
+  },
+  "about": {
+    "title": "À Propos De Moi",
+    "content": "Développeur passionné avec 3 ans d'expérience en alternance, j’évolue principalement sur des technologies comme Java, C# et React. Sensible aux bonnes pratiques de développement (Clean Code, architecture hexagonale), je m’intéresse particulièrement aux problématiques d’architecture logicielle et d’industrialisation (Docker, Kubernetes). J'apprécie les environnements collaboratifs où l'on partage les connaissances, et je m’implique activement dans la montée en qualité des projets. Autonome, rigoureux et toujours en veille, je cherche à progresser continuellement et à contribuer à des projets techniquement stimulants."
+  },
+  "formation": {
+    "showMore": "Plus de détails",
+    "showLess": "Moins de détails"
   }
 }

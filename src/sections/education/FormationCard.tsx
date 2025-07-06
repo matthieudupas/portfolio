@@ -1,17 +1,21 @@
 import type {Formation} from "./formations.ts";
 import styles from "./FormationTimeLine.module.css";
-import React from "react";
+import {useState} from "react";
+import {useTranslation} from "react-i18next";
 
 interface Props {
     formation: Formation;
     isLast: boolean;
 }
 
-const FormationCard: React.FC<Props> = ({ formation, isLast }) => {
+const FormationCard = ({formation, isLast}: Props) => {
+    const [showDetails, setShowDetails] = useState(false);
+    const {t} = useTranslation();
+
     return (
         <div className={styles.timelineItem}>
-            <div className={styles.timelineDot} />
-            {!isLast && <div className={styles.timelineLine} />}
+            <div className={styles.timelineDot}/>
+            {!isLast && <div className={styles.timelineLine}/>}
             <div className={styles.timelineContent}>
                 <h3>{formation.title}</h3>
                 <span className={styles.date}>{formation.date}</span>
@@ -29,7 +33,16 @@ const FormationCard: React.FC<Props> = ({ formation, isLast }) => {
                 ) : (
                     <h4>{formation.school}</h4>
                 )}
-                <p>{formation.description}</p>
+
+                <button
+                    onClick={() => setShowDetails(!showDetails)}
+                    className={styles.toggleDetailsBtn}
+                >
+                    {showDetails ? t('formation.showLess') : t('formation.showMore')}
+                </button>
+
+                {showDetails && <p>{formation.description}</p>}
+
             </div>
         </div>
     );

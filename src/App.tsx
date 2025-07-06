@@ -1,31 +1,23 @@
-import Hero from "./sections/hero/Hero.tsx";
-import About from "./sections/about/About.tsx";
-import Education from "./sections/education/Education.tsx";
-import Experience from "./sections/experience/Experience.tsx";
-import Navbar from "./components/navbar/Navbar.tsx";
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import {I18nextProvider} from "react-i18next";
 import i18n from "./i18n.ts";
-import Footer from "./components/footer/Footer.tsx";
-import Contact from "./sections/contact/Contact.tsx";
-import Layout from "./components/layout/Layout.tsx";
+import HomePage from "./pages/HomePage.tsx";
+import ExperienceDetail from "./sections/experience/ExperienceDetail.tsx";
 
 function App() {
 
-  return (
-    <>
-        <I18nextProvider i18n={i18n}>
-            <Navbar/>
-            <Layout>
-                <Hero/>
-                <About/>
-                <Experience/>
-                <Education/>
-                <Contact/>
-            </Layout>
-            <Footer/>
-        </I18nextProvider>
-    </>
-  )
+    return (
+        <>
+            <I18nextProvider i18n={i18n}>
+                <Router>
+                    <Routes>
+                        <Route path="/" element={<HomePage/>}/>
+                        <Route path="/experience/:id" element={<ExperienceDetail/>}/>
+                    </Routes>
+                </Router>
+            </I18nextProvider>
+        </>
+    )
 }
 
 export default App

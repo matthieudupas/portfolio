@@ -1,0 +1,78 @@
+.container {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+    color: #1a202c;
+}
+
+.company {
+    font-size: 1.25rem;
+    color: #4a5568;
+    margin-bottom: 0.5rem;
+}
+
+.date {
+    color: #718096;
+    margin-bottom: 1rem;
+}
+
+.description {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.link {
+    color: #3182ce;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.mission {
+    background-color: #f7fafc;
+    border-left: 4px solid #3182ce;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    border-radius: 6px;
+}
+
+.objective {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.context,
+.result {
+    margin-bottom: 0.5rem;
+}
+
+.actionsLabel {
+    margin: 0.5rem 0 0.25rem;
+}
+
+.actions {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.actionItem {
+    margin-bottom: 0.25rem;
+}
+
+.title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    position: relative;
+}

@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Experience.module.css";
 import type {Experience} from "./experiences.ts";
 
@@ -6,7 +5,7 @@ interface Props {
     experience: Experience;
 }
 
-const ExperienceCard: React.FC<Props> = ({ experience }) => {
+const ExperienceCard = ({experience}: Props) => {
     return (
         <div className={styles.card}>
             <h3>{experience.title}</h3>

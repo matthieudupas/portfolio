@@ -3,6 +3,7 @@ import {I18nextProvider} from "react-i18next";
 import i18n from "./i18n.ts";
 import HomePage from "./pages/HomePage.tsx";
 import ExperienceDetail from "./sections/experience/ExperienceDetail.tsx";
+import MatomoTracker from './MatomoTracker';
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
         <>
             <I18nextProvider i18n={i18n}>
                 <Router>
+                    <MatomoTracker/>
                     <Routes>
                         <Route path="/" element={<HomePage/>}/>
                         <Route path="/experience/:id" element={<ExperienceDetail/>}/>
